@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projects>
+
+    <project>
+        <title>Mayer's Principles OER Website</title>
+        <description>An interactive web application showcasing Mayer's 12 Principles of Multimedia Design for e-learning content.</description>
+        <date>September 2026</date>
+    </project>
+
+    <project>
+        <title>Tug-of-War Mini-Game</title>
+        <description>An interactive python-based mini-game focusing on core programming logic, user interaction, and state management.</description>
+        <date>June 2026</date>
+    </project>
+
+    <project>
+        <title>My Profile Web Page</title>
+        <description>A structured profile page built with semantic HTML5 markup and verified for strict structural validity.</description>
+        <date>October 2026</date>
+    </project>
+
+</projects>

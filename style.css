@@ -1,0 +1,261 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bonbon&family=Crafty+Girls&display=swap');
+
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Crafty Girls', Arial, sans-serif;
+    background: linear-gradient(135deg, #ffeef5 0%, #eef2ff 50%, #f5ebff 100%);
+    color: #332d40;
+    margin: 0;
+    padding: 2rem 1rem;
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* Centered Container (Prevents text from stretching too wide) */
+.page-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Top Decorative Ribbon */
+.top-ribbon {
+    background: linear-gradient(90deg, #f472b6, #c084fc, #818cf8);
+    color: #ffffff;
+    text-align: center;
+    padding: 0.6rem 1rem;
+    border-radius: 999px;
+    font-size: 1.05rem;
+    letter-spacing: 0.03em;
+    box-shadow: 0 4px 12px rgba(192, 132, 252, 0.25);
+}
+
+/* Hero Header Card */
+.hero-card {
+    background-color: #ffffff;
+    border: 2px solid #f3e8ff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.1);
+}
+
+.profile-photo {
+    width: 9.5rem;
+    height: 9.5rem;
+    background-color: #fbcfe8;
+    border: 4px solid #d8b4fe;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+    box-shadow: 0 6px 16px rgba(236, 72, 153, 0.2);
+}
+
+.hero-text h1 {
+    font-family: 'Bonbon', cursive, sans-serif;
+    font-size: 2.8rem;
+    color: #7c3aed;
+    margin: 0 0 0.25rem 0;
+    line-height: 1.2;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    color: #db2777;
+    margin: 0 0 1rem 0;
+}
+
+/* Quick Navigation Links */
+.quick-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+}
+
+.quick-nav a {
+    text-decoration: none;
+    background-color: #fdf2f8;
+    color: #9d174d;
+    border: 1.5px solid #fbcfe8;
+    padding: 0.3rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.95rem;
+    transition: all 0.2s ease;
+}
+
+.quick-nav a:hover {
+    background-color: #f472b6;
+    color: #ffffff;
+    border-color: #f472b6;
+}
+
+/* Main Content Cards */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.content-card {
+    background-color: #ffffff;
+    border: 2px solid #f3e8ff;
+    border-radius: 1.5rem;
+    padding: 2rem;
+    box-shadow: 0 8px 24px rgba(139, 92, 246, 0.08);
+}
+
+h2 {
+    font-family: 'Bonbon', cursive, sans-serif;
+    font-size: 2.2rem;
+    color: #c026d3;
+    margin: 0 0 1rem 0;
+    padding-bottom: 0.4rem;
+    border-bottom: 2px dashed #f3e8ff;
+}
+
+.section-intro {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    color: #5b4b6a;
+}
+
+p {
+    font-size: 1.05rem;
+    margin: 0 0 1rem 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+/* Pill Badges for "Things I Love" */
+.pill-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.pill {
+    padding: 0.45rem 1.1rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: transform 0.2s ease;
+}
+
+.pill:hover {
+    transform: translateY(-2px);
+}
+
+.pill.pink {
+    background-color: #fce7f3;
+    color: #9d174d;
+    border: 1.5px solid #f9a8d4;
+}
+
+.pill.purple {
+    background-color: #f3e8ff;
+    color: #6b21a8;
+    border: 1.5px solid #d8b4fe;
+}
+
+.pill.blue {
+    background-color: #e0f2fe;
+    color: #075985;
+    border: 1.5px solid #7dd3fc;
+}
+
+/* 2-Column Mini Cards Grid */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.mini-card {
+    background-color: #faf7ff;
+    border: 1.5px solid #e9d5ff;
+    border-radius: 1rem;
+    padding: 1.25rem;
+}
+
+.mini-card h3 {
+    font-family: 'Bonbon', cursive, sans-serif;
+    font-size: 1.65rem;
+    color: #2563eb;
+    margin: 0 0 0.4rem 0;
+}
+
+.mini-card p {
+    font-size: 0.98rem;
+    color: #475569;
+}
+
+/* Footer Card */
+.footer-card {
+    background-color: #ffffff;
+    border: 2px solid #fbcfe8;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(236, 72, 153, 0.08);
+}
+
+.quote {
+    font-size: 1.15rem;
+    color: #be185d;
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    font-size: 0.9rem;
+    color: #6b7280;
+}
+
+/* Mobile Responsive Media Query */
+@media (max-width: 650px) {
+    body {
+        padding: 1rem 0.75rem;
+    }
+
+    .hero-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 1.5rem;
+        gap: 1.25rem;
+    }
+
+    .hero-text h1 {
+        font-size: 2.3rem;
+    }
+
+    .quick-nav {
+        justify-content: center;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card {
+        padding: 1.5rem;
+    }
+}
